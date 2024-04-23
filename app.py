@@ -6,7 +6,7 @@ app = Flask(__name__)
 @app.route('/')
 def log():
     return redirect(url_for('index'))
-
+@app.route('/index')
 def index():
     return redirect(url_for('index'))
 if __name__ == '__main__':
